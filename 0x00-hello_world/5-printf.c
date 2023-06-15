@@ -3,9 +3,8 @@
  * main - print string using printf
  *
  * Description: this program prints with proper grammar, but the
- * outcome is a piece of art,.
- *
- * return value(0)
+ * outcome is a piece of art,
+ * Return: 0
  */
 int main(void)
 {

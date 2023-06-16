@@ -4,7 +4,7 @@
 /**
  * main - program outputs if n positive, negative or null
  *
- * Description: generate random num and outputs if it is 
+ * Description: generate random num and outputs if it is
  * positive, negative or null
  *
  * Return: 0
@@ -19,7 +19,7 @@ int main(void)
 		printf("%d is negative\n", n);
 	else if (n == 0)
 		printf("%d is positive\n", n);
-	else
+	else if (n > 0)
 		printf("%d is zero\n", n);
 	return (0);
 }

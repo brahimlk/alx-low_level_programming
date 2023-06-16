@@ -9,7 +9,7 @@
 int main(void)
 {
 	char c[] = "abcdefghijklmnopqrstuvwxyz";
-	int i=0;
+	int i = 0;
 
 	while (c[i] != '\0')
 	{

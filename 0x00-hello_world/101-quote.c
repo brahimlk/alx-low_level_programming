@@ -3,14 +3,16 @@
  * main - print a string using putchar
  *
  * Description: print a sting using putchar within a loop condition
- * return: 1
+ *
+ * Return: 1
  */
 int main(void)
 {
-	char strg[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-	int i=0;
+	char strg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int i = 0;
 
-	while(strg[i]!='\0'){
+	while (strg[i]! = '\0')
+	{
 		putchar(strg[i]);
 		i++;
 	}

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /**
  * main - prints _putchar
  *
@@ -8,6 +8,8 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	int c[] = "_putchar";
+	while (c != '\0')
+		_putchar(c);
 	return (0);
 }

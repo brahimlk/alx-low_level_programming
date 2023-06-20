@@ -6,9 +6,11 @@
  *
  * Return: 0 or 1
  */
-int _islower(int c)
+int _islower(int c)/*c input character*/
 {
-	if (c <= '122' && c >= '97')
+	char ch = 'c';
+
+	if (ch <= 122 && ch >= 97)
 		_putchar('1');
 	else
 		_putchar('0');

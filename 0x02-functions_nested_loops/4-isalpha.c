@@ -8,7 +8,7 @@
  * @c: input character
  * Return: 0 or 1
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if (c <= 122 && c >= 97)
 	{

@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * print_alphabet - alphabet in lowercase
+ * add - add two numbers and return result
  *
- * @i, j: input numbers
+ * @i: input number
+ * @j: input number
  * Return: result
  */
 int add(int i, int j)
@@ -10,5 +11,5 @@ int add(int i, int j)
 		int result;
 
 		result = i + j;
-		return(result);
+		return (result);
 	}

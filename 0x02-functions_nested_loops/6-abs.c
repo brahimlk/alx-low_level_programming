@@ -5,7 +5,7 @@
  * @n: input number
  * Return: n or -n
  */
-int _abs(int)
+int _abs(int n)
 {
 	int n;
 

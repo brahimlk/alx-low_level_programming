@@ -12,7 +12,7 @@ int _islower(int c)
 	c = 'c';
 	if (c <= 122 && c >= 97)
 		_putchar('1');
-	else
+	if (!(c <= 122 && c >= 97))
 		_putchar('0');
 	return (0);
 }

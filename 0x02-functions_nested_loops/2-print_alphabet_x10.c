@@ -8,10 +8,12 @@
  */
 void print_alphabet_x10(void)
 	{
-		int j;
+		int j, i;
 
 		for (j = 0; j < 10; j++)
 		{
-			void print_alphabet(void);
+			for (i = 97; i <= 122; i++)
+				_putchar(i);
+			_putchar('\n');
 		}
 	}

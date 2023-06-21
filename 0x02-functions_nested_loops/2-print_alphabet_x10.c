@@ -4,8 +4,6 @@
  *
  * Description: function that prints the alphabet 10x times, in lowercase
  * using _putchar
- *
- * Return: 0
  */
 void print_alphabet_x10(void)
 	{

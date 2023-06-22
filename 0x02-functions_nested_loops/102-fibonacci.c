@@ -11,7 +11,7 @@ int main(void)
 	for (i = 0; i < 50; i++)
 	{
 		if (i < 2)
-			sum = (n - 1) + (n - 2);
+			sum = (i - 1) + (i - 2);
 		else
 			sum = i;
 		printf("%d", sum);

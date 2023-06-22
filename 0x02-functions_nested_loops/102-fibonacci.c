@@ -21,5 +21,6 @@ int main(void)
 		sum_2 = sum_1;
 		sum_1 = sum;
 	}
+	printf("\n");
 	return (0);
 }

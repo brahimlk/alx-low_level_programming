@@ -5,7 +5,7 @@
  */
 void print_number(int n)
 {
-	int i;
+	unsigned int i;
 	int j = 1;
 
 	if (n < 0)
@@ -19,10 +19,11 @@ void print_number(int n)
 		j *= 10;
 		i /= 10;
 	}
+	i = n;
 	while (j > 0)
 	{
-		_putchar((n / j) + '0');
-		n = n % j;
+		_putchar((i / j) + '0');
+		i = i % j;
 		j /= 10;
 	}
 }

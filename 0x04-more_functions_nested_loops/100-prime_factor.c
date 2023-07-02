@@ -10,19 +10,23 @@ int main(void)
 	long int num = 612852475143;
 	long int prime, fact, i, j;
 
-	for (i = 2; i < num; i++)
+	for (i = 2; i * i <= num; i++)
 	{
-		for (j = 1; j <= i; j++)
+		j = 2;
+		while (i % j != 0)
 		{
-			if (i % j == 0 && (j == 1 || j == i))
-				prime = i;
+			j++;
 		}
+		if (j == i)
+			prime = i;
 		while (num % prime == 0)
 		{
 			num /= prime;
 			fact = prime;
 		}
 	}
-	printf("%ld", fact);
+	if (num / fact != 1)
+		fact = num;
+	printf("%ld\n", fact);
 	return (0);
 }

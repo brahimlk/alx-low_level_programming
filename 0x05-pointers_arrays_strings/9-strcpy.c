@@ -20,6 +20,8 @@ char *_strcpy(char *dest, char *src)
 	{
 		if (src[i] != '\0')
 			dest[i] = src[i];
+		else
+			dest[i] = '\0';
 	}
 	return (dest);
 }

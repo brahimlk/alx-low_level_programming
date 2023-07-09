@@ -22,10 +22,12 @@ int is_prime_number(int n)
 int test_prime(int n, int i)
 {
 	if (n % i == 0)
+	{
 		if (i == n)
 			return (1);
 		else
 			return (0);
+	}
 	i++;
 	return (test_prime(n, i));
 }

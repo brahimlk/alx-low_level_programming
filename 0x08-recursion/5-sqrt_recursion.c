@@ -6,26 +6,26 @@
  */
 int _sqrt_recursion(int n)
 {
-	int sqrt = 0;
+	int sqr = 0;
 
 	if (n < 0)
 		return (-1);
-	sqrt = _sqrt(n, sqrt);
-	if (sqrt * sqrt == n)
-		return (sqrt);
+	sqr = _sqrt_test(n, sqr);
+	if (sqr * sqr == n)
+		return (sqr);
 	else
 		return (-1);
 }
 /**
- * _sqrt - function that test sqrt
- * @i: integer
- * @j: test sqrt
+ * _sqrt_test - function that test sqrt
+ * @n: integer
+ * @sqr: test sqrt
  * Return: sqrt
  */
-int _sqrt(int i, int j)
+int _sqrt_test(int n, int sqr)
 {
-	if (j * j >= i)
-		return (j);
-	j++;
-	return (_sqrt(i, j));
+	if (sqr * sqr >= n)
+		return (sqr);
+	sqr++;
+	return (_sqrt_test(n, sqr));
 }

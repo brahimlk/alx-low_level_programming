@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int cents = atoi(argv[1]);
+	int cents;
 	int coins = 0;
 
 	if (argc != 2)
@@ -17,6 +17,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
+	cents = atoi(argv[1]);
 	if (cents < 0)
 		printf("0\n");
 	else
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
 		if (cents >= 5)
 		{
 			coins += cents / 5;
-			cents %= 10;
+			cents %= 5;
 		}
 		if (cents >= 2)
 		{

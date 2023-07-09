@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	sqrt = _sqrt(n, sqrt)
+	sqrt = _sqrt(n, sqrt);
 	if (sqrt * sqrt == n)
 		return (sqrt);
 	else
@@ -18,14 +18,14 @@ int _sqrt_recursion(int n)
 }
 /**
  * _sqrt - function that test sqrt
- * @n: integer
- * @sqrt: test sqrt
+ * @i: integer
+ * @j: test sqrt
  * Return: sqrt
  */
-int _sqrt(int n, int sqrt)
+int _sqrt(int i, int j)
 {
-	if (sqrt * sqrt >= n)
-		return (sqrt);
-	sqrt++;
-	return (_sqrt(n, sqrt));
+	if (j * j >= i)
+		return (j);
+	j++;
+	return (_sqrt(i, j));
 }

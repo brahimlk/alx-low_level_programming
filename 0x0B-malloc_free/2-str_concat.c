@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, size;
+	unsigned int i, j, size;
 	char *ptr;
 
 	size = strlen(s1) + strlen(s2) + 1;

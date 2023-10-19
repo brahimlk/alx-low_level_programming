@@ -11,8 +11,6 @@
  */
 int main(int argc, char **argv)
 {
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
 	int (*opt)(int, int);
 
 	if (argc != 4)
@@ -31,6 +29,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", opt(a, b));
+	printf("%d\n", opt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }

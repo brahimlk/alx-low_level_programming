@@ -39,4 +39,5 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 	opcodes_print((char *)&main, n);
+	return (0);
 }

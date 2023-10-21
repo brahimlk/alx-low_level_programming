@@ -4,7 +4,17 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * struct format - Struct format
+ *
+ * @format: The format
+ * @type: The type assocciated
+ */
+typedef struct format
+{
+	char flag;
+	char *type;
+} format_t
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);

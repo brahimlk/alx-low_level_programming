@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main -  program that prints the opcodes of its own main function.
  * @argc: count.
@@ -34,7 +35,7 @@ void opcodes_print(char *f, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("\.2hhx", f[i]);
+		printf("%.2hhx", f[i]);
 		if (i != n - 1)
 			printf(" ");
 	}

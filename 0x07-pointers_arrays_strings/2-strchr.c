@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr -  function that locates a character in a string.
  * @s: string.
@@ -7,9 +8,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	char *ptr;
-
 	while (*s != '\0')
 	{
 		if (*s == c)
